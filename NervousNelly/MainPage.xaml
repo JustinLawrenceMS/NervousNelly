@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="NervousNelly.MainPage">
+    <StackLayout
+        BackgroundColor="Black">
+        <!-- Place new controls here -->
+        <RelativeLayout>
+
+             <Image Source="https://farm5.staticflickr.com/4522/38565655971_92344e2531_b.jpg"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+             </Image>
+            <Grid RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+ <Button Grid.Row="6"
+                    HorizontalOptions="Center"
+                        FontSize="Title"
+                        VerticalOptions="StartAndExpand"
+                        BackgroundColor="Black" TextColor="BlanchedAlmond" Text="Click Here"></Button>
+
+                <Label FontSize="Title"
+                        BackgroundColor="Black"
+                       TextColor="BlanchedAlmond" FontAttributes="Bold" Text="Stay in Touch with NervousNelly" HorizontalOptions="Center" VerticalOptions="End" />
+               
+            </Grid>
+        </RelativeLayout>
+      
+    </StackLayout>
+</ContentPage>

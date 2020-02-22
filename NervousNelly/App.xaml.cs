@@ -10,7 +10,14 @@ namespace NervousNelly
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            CarouselPage carouselPage = new CarouselPage();
+
+            MainPage mainPage = new MainPage();
+            carouselPage.Children.Add(mainPage);
+            carouselPage.Children.Add(new CrudPage1());
+
+            MainPage = carouselPage;
+
         }
 
         protected override void OnStart()
